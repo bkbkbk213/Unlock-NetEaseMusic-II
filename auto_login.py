@@ -53,14 +53,6 @@ def extension_login():
     # Inject Cookie to skip login
     logging.info("Injecting Cookie to skip login")
     browser.add_cookie({"name": "MUSIC_U", "value": "009CA6605FC2F3E0562A67224BDAFA839E6269C3B9DBC187C553A0BC21D90AB19AD250390EA7B8CD1FCAA183E5AFBEB6C9F734B816978701212B3FA614BC88AA19D8CE6CDAACF4A10B95CECAE626243BBD1E924757C637243C3F57B4A4FBFC609A1D0E523B2F98AF41CEEE708C78AB2FB46F4EB254ED1FBC8D074B04ED6F66824B39A9F5E80A4BC788AC09C635974FDEDF3A83F1F97BA4A3969C7BAE5005753C5593C6CBE20A441EC0D9FD8D5CDB251E50E46485C107F753BDEF5A5EF953C9E98493FB0766FA51BCE387952FB3D6AE048F21D0A8F246E4C856103B4B1371547064041E6E69633FAFD0B47E5A2A43087FA41F4D2C175993461141985D40DFA47FF0E4E6C813F74E4686A97625DEC8C9E8E1368AF761DF5A62BA8B87B66B950C6A0300EE1838B7644CAF0280D9C5F4156F137BDE394EADAD6A4B1474298F5411B95702C079ED2B203681055E9E609A873286AB4E779E562AEB3AAEAEC178776F2543"})
-Privacy and security panel
-Test how a website behaves with limited third-party cookies and find relevant issues in the new 'Privacy' section of the evolved 'Privacy and security' panel.
-
-Calibrated CPU throttling presets
-Based on your users' experience, automatically calibrate and use more accurate CPU throttling presets for low- and mid-tier mobile devices.
-
-First- and third-party highlighting in Performance
-Reduce the noise of third-party data and hover over entries in a new table in Summary to distinguish between first- and third-party data in performance traces."})
     browser.refresh()
     time.sleep(5)  # Wait for the page to refresh
     logging.info("Cookie login successful")
